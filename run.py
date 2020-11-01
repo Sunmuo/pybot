@@ -1,5 +1,5 @@
 import discord
-
+import os
 client = discord.Client()
 
 bad = ['시발','ㅅㅂ','ㅗ','ㅈ','씨발','좆','ㅗㅗ','ㅄ','병신','븅신','미친','미친놈','미친넘','시벌','fuck','fk','퍽유','퍽','ㅂㅅ',':middle_finger:','멍청이']
@@ -117,5 +117,5 @@ async def on_message(message):
             await message.channel.send('어허 세종 세종대왕님께서 노하신다..')
             await message.delete()
 
-
-client.run('NzcwOTE2NDg1MTAyMTc0MjE4.X5kh7A.jUbhuFe8UG-FfBf5vr6SyqAgY0s')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
