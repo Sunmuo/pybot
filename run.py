@@ -117,5 +117,5 @@ async def on_message(message):
             await message.channel.send('어허 세종 세종대왕님께서 노하신다..')
             await message.delete()
 
-access_token = os.environ["BOT_TOKEN"]
+access_token = os.environ['BOT_TOKEN']
 client.run(access_token)
